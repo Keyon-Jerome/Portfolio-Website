@@ -1,139 +1,139 @@
 <!DOCTYPE HTML>
-<html lang ="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blog - Keyon Jerome</title>
-        <!-- FONTS -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
-        <!-- EXTERNAL CODE (JS/CSS) -->
-        <link href="CSS/bootstrap.min.css" rel="stylesheet">
-        <link href="/CSS/styles.css" rel="stylesheet">
-        <script src="jquery-3.3.1.min.js"></script>
-    </head>
-    <body>
-    <div class = "container">
-    <div class = "overhead">
-        <img src="/images/keyon.jpg" alt="avatar" class = "avatar">
-        <header>
-            <h1>Keyon Jerome</h1>
-            <h2>aspiring thingmaker/engineer</h2>
-        </header>
-        
-        </div>
-                <div class="header-text" id="welcomeBanner">
-                    <p id="welcome-paragraph"><b>Welcome!</b> I'm Keyon, a student from Canada. Welcome to my personal website! I coded this website from the ground up using HTML and CSS over a summer where I had free time. It's meant to be a place where I can document my own successes, failures, and anything I find interesting along the way; especially relating to technology.
-                    </p>             <button onclick="closeWelcomeBanner()" id="closeButton">x</button>
+<html lang="en">
 
-        </div>
-            <nav>
-                <a href="http://instagram.com/thekeybored" target="_blank" ><img src="/images/instagramlogotransparent.png" alt="Instagram" class="media-link" id="instagram"></a>
-            <a href="http://twitter.com" target="_blank">
-                <img src="/images/twitterlogotransparent.png" alt="Twitter" class = "media-link" id="twitter">
-                </a>
-                <div class="nav-left">
-                    <a href="portfolio.html" target="_blank"></a> | <a href="http://github.com/keyon-jerome" target="_blank">Github</a></div>
-                <div class ="nav-right">KJ</div>
-            </nav>
-        
-        <div class ="content">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Keyon Jerome</title>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+    <!-- EXTERNAL CODE (JS/CSS) -->
+    <script src="JS/jquery-3.3.1.min.js"></script>
+    <script src="JS/popper.min.js"></script>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <script src="JS/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/animate.css">
+    <link rel="stylesheet" href="CSS/styles.css" type="text/css">
 
-        <main>
-            <section class ="blog-post">
-            <h2>The Robotics Emailer Bot-thing</h2>
-            <h3>9/3/2018 - BLOG POST #2</h3>
-            <hr>
-            <p class="blog-post-header">Can't really call it a bot, since it's not totally automated...</p>
-              <!--  <img src="images/spartanemailsender.PNG"> -->
-                <p>Every year, my robotics team needs to find sponsors for that year to fund our <a href="http://spartanrobotics.ca/sponsorship/">registration into the program and materials for the robot.</a> Sending dozens of emails can get really repetitive, and I just wished that the process could be made faster. Fortunately, with a little bit of help from the JavaMail API, it could be.</p>
-                <p>At the beginning of my project, the plan was to download a database/sheet of all the emails and names of the companies in my area. I couldn't get a recent enough datasheet though, so I scrapped that even after I had already written code to parse the data. Instead of making a program that mass-emailed them all with pre-written (but unique to each company) sponsorship proposals, I decided to take a crack at JavaFX and build a UI that just asks the user to manually input the name, email, reason why said company should sponsor us, and other user/recipient details. It then fills these into a nice template and sends it off for me! I will admit, it's not the prettiest though.</p>
-                <p>This program makes it <b>soo much quicker</b> to send off emails, but there is one problem with it; Email services/providers can tell that the email is being sent programmatically and alerts the recipient of the email, which could immediately turn them away. I'm a human I swear :(</p>
-                <p>You can download this project on my <a href="github.com/keyon-jerome">GitHub</a> and take a look. It's not totally finished, I still want to add an HTML previewer for the email.</p>
-            </section>
-        <section class ="blog-post">
-            <h2>Mistakes In The Making of This Website</h2>
-            <h3>8/1/2018 - BLOG POST #1</h3>
-            <hr>
-            
-            <p class="blog-post-header">I'm not going to lie, making this website wasn't easy, and I think it took much longer than it should have. Here's why:</p>
-            <div class ="list-container">
-            <ol>
-                <li>My Method of Learning</li>
-                <p> I started learning CSS at the beginning of July through <a href="https://www.lynda.com/CSS-tutorials/CSS-Fundamentals/417645-2.html" target="_blank">James Williamson's CSS Overview Course on Lynda.com</a>. This course is a very, very good introduction to CSS, but it didn't have any exercise files; it was just a series of videos. This meant that when I started creating my website using CSS, I had no experience actually dealing with different attributes being active at once. I had no experience actually writing any CSS. I started realizing this as I began creating this website, and had to decide whether to take a new course or learn as I went along.</p>
-                <li>No Drafts = A Terrible Experience</li>
-                <p>When I started writing the CSS for this website, I had NO drafts of what it was going to look like. All I had was a constantly-changing image in my head. Unfortunately, when something's just an image in your head, you can't see just how <a>ugly it will actually look...</a>
-                I didn't bother making the draft because I knew if I drew it out on paper, it would look horrible either way. Later, I finally began using Adobe XD to create my drafts. This is where I really became productive with my website design; Adobe XD was simple to use and create designs with, and using it I was even able to calculate the dimensions of an element in CSS.</p>
-                <li>No Content</li>
-                <p>Most web designers code all of their HTML before even thinking of CSS; including the <b>content included in that HTML</b>. While coding this website, I only had placeholder content on the page. I'm talking <a>Lorem Ipsum</a> and small bits of my own text that I knew I wouldn't want to keep. This was a huge mistake that made it so much harder to design my website. I was creating styles for content that wasn't there. Writing this blog post is for example, one of the last steps before I fully deploy my website. It would've been much easier to categorize my mistakes if I'd written them out as I was facing them...</p>
-            </ol>
+
+</head>
+
+<body class="px-0 mx-0">
+    <header>
+        <!-- Hamburger menu + desktop navbar-->
+        <div class="container-fluid px-0 mx-0">
+            <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-sm pr-0 stopOverflow" style="width:100%;">
+
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myTogglerNav"
+                    aria-controls="myTogglerNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+
+                </button> <!-- navbar-toggler -->
+
+                <span class="navbar-brand text-info animated bounceInLeft">KJ </span>
+
+                <div class="collapse navbar-collapse" id="myTogglerNav">
+                    <div class="navbar-nav  navbar-fixed-top">
+                        <a class="nav-item nav-link active text-uppercase animated pulse infinite" href="#">Home</a>
+                        <a class="nav-item nav-link" href="workexperience.html">Work Experience</a>
+                        <a class="nav-item nav-link" href="education.html">Education</a>
+                        <a class="nav-item nav-link" href="contactme.html">Contact</a>
+
+                    </div> <!-- navbar-nav -->
+                </div> <!-- navbar-collapse -->
+
+            </nav> <!-- navbar-site -->
+        </div> <!-- bootstrap container -->
+    </header>
+    <main>
+        <div class="container-fluid px-0 mx-0" style="padding-right:0; margin-right: 0;">
+            <div class="container-fluid px-0 mx-0 " style="width:100%;">
+            <!-- KEYON blue header row-->
+            <section class="row py-sm-1 stopOverflow" style="background: #6384B6; margin:0;">
+
+                <div class=" col-12 col-sm-4 align-self-center ">
+                    <!-- image column-->
+                    <img src="images/keyon2square.jpg" class=" rounded-circle head-border mx-auto mt-2 mt-sm-0 d-block" alt="avatar">
+                </div>
+                <!-- text -->
+                <div class=" col-12 col-sm-8 text-light justify-content-center">
+                    <h1 class="animated  bounceInRight  display-1 mt-3 row justify-content-center text-uppercase" style="font-size:7.7vw;">Keyon
+                        Jerome</h1>
+                    <h2 class=" row justify-content-center text-center" style="font-size:4.5vw;">aspiring
+                        thingmaker/engineer</h2>
+
+                    <p class=" mt-5 welcome-paragraph  ml-1 ml-sm-0 text-center"><b>Welcome!</b> I'm Keyon, a student
+                        from
+                        Canada. Welcome to my personal website! I coded this website from the ground up using HTML and
+                        CSS over a summer where I had free time. It's meant to be a place where I can document my own
+                        successes, failures, and anything I find interesting along the way; especially relating to
+                        technology.
+                    </p>
+
+                </div>
+            </section> <!-- row -->
             </div>
-            </section>
+            <!-- Work Experience -->
+            <section class=" row border-top border-dark py-2 stopOverflow" style="background: #342828;">
+                <div class="col-3 col-sm-2 order-2 align-self-center">
+                    <img src="images/keyserious.jpg" class=" img-fluid rounded-circle align-self-center border border-white">
 
-        </main>
-        </div>
-        </div>
-    </body>
-    <footer>
-        <script>
-            var welcomeParagraph = document.getElementById("welcome-paragraph");
-            var welcomeBanner = document.getElementById("welcomeBanner");
-            var readMoreButton = document.getElementById("readMoreButton");
-            var open = false;
-            var readMore = $("#welcome-paragraph").html();
-            var lessText = readMore.substr(0,130);
-            
-            function readMoreStuff(){
-                
-                /* media query for device width */
-                if(window.innerWidth <= 425){
-                    
-                    if(readMore.length > 180 && !open){
-                        $("#welcome-paragraph").html(lessText).append("... <a class='read-more-link' href='javascript:openCloseReadMore()'>Read more</a>");
+                </div> <!-- image col-->
+                <div class="col-8 text-white col-sm-9 order-3 order-sm-1 text-center">
+                    <h3 class="display-3" style="font-size:5vw;">Work Experience</h3>
+                    <h4 class="" style="font-size:2.25vw;">all relevant work experience; community service hours, jobs,
+                        etc.</h4>
+                    <a href="workexperience.html" role="button" class="btn btn-dark btn-outline-secondary mt-2 my-sm-1 mt-lg-2  btn-lg">Read
+                        More</a>
+                </div>
+                <div class="col-1 order-1 order-sm-3"></div>
+                <!-- empty column for spacing, cannot use offset as order switches-->
 
-                    }
-                }
-            
-            }
+            </section> <!-- row -->
 
-            function openCloseReadMore() {
-                if(!open){
-                welcomeParagraph.style.height = "52vw";
-                $("#welcome-paragraph").html(readMore).append("<a class='read-more-link' href='javascript:openCloseReadMore()'>Read Less</a>");
-                open = true;
-                }
-                else {
-                    open = false;
-                    readMoreStuff();
-                    welcomeParagraph.style.height = "25vw";
-                    
-                }
-            }
-            function resetReadMore() {
-                if(window.innerWidth > 425) {
-                    $("#welcome-paragraph").html(readMore);
-                }
-                else {
-                    readMoreStuff();
-                }
-            }
-            function closeWelcomeBanner() {
-                console.log("Welcome Banner closed.");
-                if(welcomeBanner.style.display != "none") {
-                    welcomeBanner.style.display = "none";
-                }
-            }
-            $(document).ready(function() {
-                readMoreStuff();
-            })
-            window.onresize = resetReadMore;
-            
-            function blogReadMore() {
-                
-            }
-                
-        
-        
-        </script>
-    </footer>
+            <!-- Education-->
+            <section class=" row border-top border-dark py-2 stopOverflow" style="background:rgb(17, 75, 53);">
+                <div class="col-3 col-sm-2 order-2 align-self-center">
+                    <img src="images/education.jpg" class=" img-fluid rounded-circle align-self-center border border-white mx-auto">
+
+                </div> <!-- image col-->
+                <div class="col-8 text-white col-sm-9 order-sm-3 order-1 text-center mx-auto">
+                    <h3 class="display-3" style="font-size:5vw;">Education</h3>
+                    <h4 class="" style="font-size:2.5vw;">From CPR to high school, here's all of my current education.</h4>
+                    <a class="btn btn-light btn-outline-light mt-2 my-sm-1 mt-lg-2  btn-lg" href="education.html">Read
+                        More</a>
+                </div> <!-- text -->
+                <div class="order-sm-1 order-3 col-1"></div>
+
+            </section> <!-- row -->
+
+            <!-- Contact Me -->
+            <section class=" row border-top border-dark py-2 stopOverflow" style="background: rgba(111, 121, 201, 0.493);">
+                <div class="col-3  col-sm-2 order-2 align-self-center">
+                    <img src="images/contact.png" class=" img-fluid rounded-circle align-self-center border border-white">
+
+                </div> <!-- image col-->
+                <div class="col-8 text-white col-sm-9 order-sm-1 order-3 text-center">
+                    <h3 class="display-3" style="font-size:5vw;">Contact Me</h3>
+                    <h4 class="" style="font-size:2.5vw;">Email? Website? I've got those!</h4>
+                    <a role="button" href="contactme.html" class="btn btn-outline-light mt-2 my-sm-1 mt-lg-2  btn-lg">Read
+                        More</a>
+                </div>
+                <div class="col-1 order-1 order-sm-3"></div>
+
+            </section> <!-- row -->
+
+
+
+        </div> <!-- first container-->
+
+
+
+    </main>
+</body>
+<footer>
+</footer>
+
 </html>
