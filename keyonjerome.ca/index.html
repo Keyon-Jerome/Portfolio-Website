@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html lang ="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog - Keyon Jerome</title>
+        <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+        <!-- EXTERNAL CODE (JS/CSS) -->
+        <link href="CSS/bootstrap.min.css" rel="stylesheet">
+        <link href="/CSS/styles.css" rel="stylesheet">
+        <script src="jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+    <div class = "container">
+    <div class = "overhead">
+        <img src="/images/keyon.jpg" alt="avatar" class = "avatar">
+        <header>
+            <h1>Keyon Jerome</h1>
+            <h2>aspiring thingmaker/engineer</h2>
+        </header>
+        
+        </div>
+                <div class="header-text" id="welcomeBanner">
+                    <p id="welcome-paragraph"><b>Welcome!</b> I'm Keyon, a student from Canada. Welcome to my personal website! I coded this website from the ground up using HTML and CSS over a summer where I had free time. It's meant to be a place where I can document my own successes, failures, and anything I find interesting along the way; especially relating to technology.
+                    </p>             <button onclick="closeWelcomeBanner()" id="closeButton">x</button>
+
+        </div>
+            <nav>
+                <a href="http://instagram.com/thekeybored" target="_blank" ><img src="/images/instagramlogotransparent.png" alt="Instagram" class="media-link" id="instagram"></a>
+            <a href="http://twitter.com" target="_blank">
+                <img src="/images/twitterlogotransparent.png" alt="Twitter" class = "media-link" id="twitter">
+                </a>
+                <div class="nav-left">
+                    <a href="portfolio.html" target="_blank"></a> | <a href="http://github.com/keyon-jerome" target="_blank">Github</a></div>
+                <div class ="nav-right">KJ</div>
+            </nav>
+        
+        <div class ="content">
+
+        <main>
+            <section class ="blog-post">
+            <h2>The Robotics Emailer Bot-thing</h2>
+            <h3>9/3/2018 - BLOG POST #2</h3>
+            <hr>
+            <p class="blog-post-header">Can't really call it a bot, since it's not totally automated...</p>
+              <!--  <img src="images/spartanemailsender.PNG"> -->
+                <p>Every year, my robotics team needs to find sponsors for that year to fund our <a href="http://spartanrobotics.ca/sponsorship/">registration into the program and materials for the robot.</a> Sending dozens of emails can get really repetitive, and I just wished that the process could be made faster. Fortunately, with a little bit of help from the JavaMail API, it could be.</p>
+                <p>At the beginning of my project, the plan was to download a database/sheet of all the emails and names of the companies in my area. I couldn't get a recent enough datasheet though, so I scrapped that even after I had already written code to parse the data. Instead of making a program that mass-emailed them all with pre-written (but unique to each company) sponsorship proposals, I decided to take a crack at JavaFX and build a UI that just asks the user to manually input the name, email, reason why said company should sponsor us, and other user/recipient details. It then fills these into a nice template and sends it off for me! I will admit, it's not the prettiest though.</p>
+                <p>This program makes it <b>soo much quicker</b> to send off emails, but there is one problem with it; Email services/providers can tell that the email is being sent programmatically and alerts the recipient of the email, which could immediately turn them away. I'm a human I swear :(</p>
+                <p>You can download this project on my <a href="github.com/keyon-jerome">GitHub</a> and take a look. It's not totally finished, I still want to add an HTML previewer for the email.</p>
+            </section>
+        <section class ="blog-post">
+            <h2>Mistakes In The Making of This Website</h2>
+            <h3>8/1/2018 - BLOG POST #1</h3>
+            <hr>
+            
+            <p class="blog-post-header">I'm not going to lie, making this website wasn't easy, and I think it took much longer than it should have. Here's why:</p>
+            <div class ="list-container">
+            <ol>
+                <li>My Method of Learning</li>
+                <p> I started learning CSS at the beginning of July through <a href="https://www.lynda.com/CSS-tutorials/CSS-Fundamentals/417645-2.html" target="_blank">James Williamson's CSS Overview Course on Lynda.com</a>. This course is a very, very good introduction to CSS, but it didn't have any exercise files; it was just a series of videos. This meant that when I started creating my website using CSS, I had no experience actually dealing with different attributes being active at once. I had no experience actually writing any CSS. I started realizing this as I began creating this website, and had to decide whether to take a new course or learn as I went along.</p>
+                <li>No Drafts = A Terrible Experience</li>
+                <p>When I started writing the CSS for this website, I had NO drafts of what it was going to look like. All I had was a constantly-changing image in my head. Unfortunately, when something's just an image in your head, you can't see just how <a>ugly it will actually look...</a>
+                I didn't bother making the draft because I knew if I drew it out on paper, it would look horrible either way. Later, I finally began using Adobe XD to create my drafts. This is where I really became productive with my website design; Adobe XD was simple to use and create designs with, and using it I was even able to calculate the dimensions of an element in CSS.</p>
+                <li>No Content</li>
+                <p>Most web designers code all of their HTML before even thinking of CSS; including the <b>content included in that HTML</b>. While coding this website, I only had placeholder content on the page. I'm talking <a>Lorem Ipsum</a> and small bits of my own text that I knew I wouldn't want to keep. This was a huge mistake that made it so much harder to design my website. I was creating styles for content that wasn't there. Writing this blog post is for example, one of the last steps before I fully deploy my website. It would've been much easier to categorize my mistakes if I'd written them out as I was facing them...</p>
+            </ol>
+            </div>
+            </section>
+
+        </main>
+        </div>
+        </div>
+    </body>
+    <footer>
+        <script>
+            var welcomeParagraph = document.getElementById("welcome-paragraph");
+            var welcomeBanner = document.getElementById("welcomeBanner");
+            var readMoreButton = document.getElementById("readMoreButton");
+            var open = false;
+            var readMore = $("#welcome-paragraph").html();
+            var lessText = readMore.substr(0,130);
+            
+            function readMoreStuff(){
+                
+                /* media query for device width */
+                if(window.innerWidth <= 425){
+                    
+                    if(readMore.length > 180 && !open){
+                        $("#welcome-paragraph").html(lessText).append("... <a class='read-more-link' href='javascript:openCloseReadMore()'>Read more</a>");
+
+                    }
+                }
+            
+            }
+
+            function openCloseReadMore() {
+                if(!open){
+                welcomeParagraph.style.height = "52vw";
+                $("#welcome-paragraph").html(readMore).append("<a class='read-more-link' href='javascript:openCloseReadMore()'>Read Less</a>");
+                open = true;
+                }
+                else {
+                    open = false;
+                    readMoreStuff();
+                    welcomeParagraph.style.height = "25vw";
+                    
+                }
+            }
+            function resetReadMore() {
+                if(window.innerWidth > 425) {
+                    $("#welcome-paragraph").html(readMore);
+                }
+                else {
+                    readMoreStuff();
+                }
+            }
+            function closeWelcomeBanner() {
+                console.log("Welcome Banner closed.");
+                if(welcomeBanner.style.display != "none") {
+                    welcomeBanner.style.display = "none";
+                }
+            }
+            $(document).ready(function() {
+                readMoreStuff();
+            })
+            window.onresize = resetReadMore;
+            
+            function blogReadMore() {
+                
+            }
+                
+        
+        
+        </script>
+    </footer>
+</html>

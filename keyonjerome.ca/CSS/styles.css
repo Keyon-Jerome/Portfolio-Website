@@ -1,0 +1,389 @@
+* {
+    overflow-x: hidden;
+    overflow-y:hidden;
+}
+
+
+html {
+    margin:0;
+    padding:0;
+    font-family: "Segoe UI", Arial,sans-serif;
+    overflow-x:hidden;
+    overflow-y: scroll;
+    display:block;
+    border:0;
+    bottom:0;
+    top:0;
+    left:0;
+    right:0;
+    width:auto;
+
+}
+
+/* PAGE STYLE*/
+body {
+    height:100%;
+    display:block;
+    width:auto;
+    margin: 0;
+    padding:0;
+    border:0;
+}
+/* OVERHEAD/TOP STYLING */
+.overhead {
+    position:relative;
+    margin: 0;
+    padding:0;
+    border:0;
+    display:block;
+    box-sizing: border-box;
+    height:29vw;
+    background: #6384B6;
+    margin-bottom: 0;
+}
+.avatar {
+    float: left;
+    border-radius:50%;
+    border: 0.75vw solid white;
+    height:26.5vw;
+    position:relative;
+    top:2.5%;
+    left:2.5%;
+    
+}
+header {
+    position:relative;
+    left:5%;
+    top:10%;
+    color:white;
+}
+header button {
+    display:none;
+}
+header h1 {
+    text-transform: uppercase;
+    font-size:7.9vw;
+    font-family:"Segoe UI", Open-Sans, Arial;
+    margin:0;
+    width:90%;
+    white-space: nowrap;
+
+}
+header h2 {
+    font-family: "Roboto", Open-Sans, Arial;
+    font-weight:normal;
+    font-size:2.1vw;
+    text-align:center;
+    margin-right: 0;
+    width:60%;
+    margin-left:15%;
+    
+}
+.header-text p {
+    position: absolute;
+    padding:0;
+    border-radius:1%;
+    width:65%;
+    font-size:1.3vw;
+    left:32.5%;
+    top:20vw;
+    margin-top: 0;
+    color:white;
+    
+}
+.header-text p b {
+    font-style: normal;
+    font-size:1.5em;
+}
+/* NAVBAR STYLING*/
+nav {
+    padding:0;
+    padding-left:1%;
+    background: #052C42;
+    height: 4vw;
+    color: white;
+    font-size: 3vw;
+    font-weight: lighter;
+    margin:0;
+    margin-bottom: 0;
+    padding-bottom:0;
+}
+.nav-left, .nav-right {
+    font-family: 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    
+}
+
+.media-link {
+    position: relative;
+    float:left;
+    height: 80%;
+    margin-right:0%;
+    margin-top:0.4%;
+    
+}
+.nav-left,.nav-right {
+    top:-6%;
+}
+
+.nav-right {
+float:right;
+position:relative;
+right:4vw;
+}
+.nav-left {
+    float:left;
+    position:relative;
+    margin-left:1vw;
+    
+}
+#twitter {
+    height:120%;
+    margin-top:-0.45%;
+    
+}
+
+/* LINK STYLING*/
+a {
+    color:inherit;
+    text-decoration: none;
+    
+}
+a:hover {
+    opacity:0.5;
+}
+a:active {
+    color:aliceblue;
+}
+a:visited {
+    color:aliceblue;
+}
+/* BLOG POST STYLING */
+.content {
+    margin:0;
+    padding:0;
+    position: relative;
+    background: rgba(2,180,44,0.1);
+    height:auto;
+}
+
+section {
+    position:relative;
+    font-family: "Segoe UI", Arial, sans-serif;
+    text-decoration: none;
+    font-style:normal;
+    width:70%;
+    padding:2%;
+    padding-left:3%;
+    padding-right:3%;
+    left:12%;
+    background: #FFF;
+    border: solid #707070 0.001em;
+    border-top: none;
+    height:100%;
+    border-bottom: 0;
+}
+section hr {
+    width:100%;
+    border:solid 0.025em;
+    margin:0;
+}
+section h2 {
+    font-size:3.1vw;
+    font-weight: normal;
+    padding:0;
+    margin:0;
+}
+section h3 {
+    font-weight:normal;
+    margin:0;
+    margin-left:6vw;
+    margin-bottom:3px;
+    font-size:1.25vw;
+    
+}
+section p {
+    font-size:0.9em;
+    margin-top:4px;
+    text-align: left;
+    text-indent:30px;
+    word-wrap: break-word;
+}
+section ol {
+    margin-top:0;
+    margin-left:0;
+    padding-left:2%;
+}
+section li {
+    font-size:2.5vw;
+}
+.blog-post-header {
+    text-indent:0;
+    text-align:center;
+}
+button {
+    display: none;
+}
+section p a {
+    text-decoration: none;
+    color:darkblue;
+}
+section p a:visited {
+    color:cadetblue;
+}
+section img {
+    width:30%;
+    padding-right:1vw;
+}
+
+
+@media only screen and (max-width:600px){
+    section p {
+        font-size:0.7em;
+    }
+}
+
+
+
+@media only screen and (max-width:425px){
+    * {
+        overflow-x:hidden;
+        overflow-y: hidden;
+    }
+    header h1 {
+        font-size:8.0vw;
+        position: relative;
+        left:5%;
+    }
+    header h2 {
+        font-size:4.3vw;
+        position:relative;
+        right:9%;
+        width:80%;
+        top:20%;
+    }
+    .header-text p {
+        margin:0;
+        position:relative;
+        left:0;
+        right:0;
+        top:0vw;
+        width:calc(80% - 2px);
+        height:25vw;
+        padding-left:10%;
+        padding-right:10%;
+        padding-top:3vw;
+        z-index: 0;
+        color:black;
+        font-size: 3.8vw;
+        background: #F0F0F0;
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+        overflow: hidden;
+        display: block;
+        border:solid #707070 1px;
+        text-overflow: ellipsis;
+    }
+    .header-text p b {
+        display:block;
+        font-style:italic;
+        margin-left:-3vw;
+    }
+    nav {
+        position: fixed;
+        overflow-x: hidden;
+        bottom:0;
+        margin:0;
+        width:100%;
+        z-index: 2;
+        height:12vw;
+        font-size:8vw;
+        
+        
+    }
+    #instagram {
+        margin-top:1.2vw;
+    }
+    .nav-left {
+        margin-top:0.75%;
+    }
+    .nav-right {
+        margin-top:1.1%;
+        padding:0;
+        padding-right:3%;
+        
+    }
+    .content {
+        position:relative;
+        margin:0;
+        padding:0;
+        background:0;
+        width:100%;
+        margin-top:1.2vw;
+        margin-bottom: 8vw;
+    }
+    section {
+        position:relative;
+        width:85%;
+        left:7.5%;
+        right:7.5%;
+        border:0;
+        margin:0;
+        padding:0;
+        border:0;
+        
+    }
+    section p {
+        font-size:4vw;
+    }
+    section li {
+        font-size:5.4vw;
+    }
+    section h2 {
+        font-size: 6.2vw; /* or 6.2vw*/
+    }
+    section h3 {
+        position: relative;
+        font-size:4vw;
+        float:right;
+    }
+    section hr {
+        border:solid black 0.5px;
+        margin-top:10px;
+    }
+
+    #closeButton {
+        display: block;
+        position: absolute;
+        top:29vw;
+        left:90%;
+        right:0;
+        border:0;
+        background:0;
+        color:red;
+        font-size:5vw;
+    }
+    #readMoreButton {
+        display: none;
+        position: absolute;
+        top:80%;
+        left:85%;
+        right:0;
+        border:0;
+        background:0;
+        color: red;
+        font-size:2.3vw;
+        text-transform: uppercase;
+    }
+    .avatar {
+        height: 26vw;
+    }
+    .read-more-link {
+        color:red;
+    }
+    #twitter {
+        top:-5%;
+    }
+
+}
