@@ -17,6 +17,9 @@ body {
 }
 
 html {
+  /* smooth scrolling*/
+  scroll-behavior: smooth;
+  
   font-size: 0.8rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Open Sans", Roboto, Arial;
   overflow-x: hidden;
