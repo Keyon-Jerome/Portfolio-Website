@@ -38,7 +38,7 @@
                     <div class="navbar-nav  navbar-fixed-top">
                         <a class="nav-item nav-link active text-uppercase animated pulse infinite" href="#">Home</a>
                       <!-- <a class="nav-item nav-link" href="workexperience.html">Work Experience</a> --> 
-                        <a class="nav-item nav-link" href="education.html">Education</a>
+                        <a class="nav-item nav-link" href="resume.html">Resume</a>
                         <a class="nav-item nav-link" href="contactme.html">Contact</a>
 
                     </div> <!-- navbar-nav -->
@@ -48,10 +48,10 @@
         </div> <!-- bootstrap container -->
     </header>
     <main>
-        <div class="container-fluid px-0 mx-0" style="padding-right:0; margin-right: 0;">
+        <div  class="container-fluid px-0 mx-0" style="padding-right:0; margin-right: 0;">
             <div class="container-fluid px-0 mx-0 " style="width:100%;">
             <!-- KEYON blue header row-->
-            <section class="row py-sm-1 stopOverflow" style="background: #6384B6; margin:0;">
+            <section id="header" class=" row py-sm-1 stopOverflow" style="background: #6384B6; margin:0;">
 
                 <div class=" col-12 col-sm-4 align-self-center ">
                     <!-- image column-->
@@ -75,37 +75,7 @@
                 </div>
             </section> <!-- row -->
             </div>
-            <!-- Education-->
-            <section class=" row border-top border-dark py-2 stopOverflow" style="background:rgb(17, 75, 53); height:17.5vw;">
-                <div class="col-3 col-sm-2 order-2 align-self-center">
-                    <img src="images/education.jpg" class=" img-fluid rounded-circle align-self-center border border-white mx-auto">
 
-                </div> <!-- image col-->
-                <div class="col-8 text-white col-sm-9 order-sm-3 order-1 text-center mx-auto">
-                    <h3 class="display-3" style="font-size:5vw;">Education</h3>
-                    <h4 class="" style="font-size:2.5vw;">From CPR to high school, here's all of my current education.</h4>
-                    <a class="btn btn-light btn-outline-light mt-2 my-sm-1 mt-lg-2  btn-lg" href="education.html">Read
-                        More</a>
-                </div> <!-- text -->
-                <div class="order-sm-1 order-3 col-1"></div>
-
-            </section> <!-- row -->
-
-            <!-- Contact Me -->
-            <section class=" row border-top border-dark py-2 stopOverflow" style="background: rgba(111, 121, 201, 0.493);">
-                <div class="col-3  col-sm-2 order-2 align-self-center">
-                    <img src="images/contact.png" class=" img-fluid rounded-circle align-self-center border border-white">
-
-                </div> <!-- image col-->
-                <div class="col-8 text-white col-sm-9 order-sm-1 order-3 text-center">
-                    <h3 class="display-3" style="font-size:5vw;">Contact Me</h3>
-                    <h4 class="" style="font-size:2.5vw;">Email? Website? I've got those!</h4>
-                    <a role="button" href="contactme.html" class="btn btn-outline-light mt-2 my-sm-1 mt-lg-2  btn-lg">Read
-                        More</a>
-                </div>
-                <div class="col-1 order-1 order-sm-3"></div>
-
-            </section> <!-- row -->
 
 
 
@@ -115,6 +85,16 @@
 
     </main>
 </body>
+<style>
+    /* Large devices (desktops, 992px and up) */
+@media (min-width: 576px) {
+  #header {
+      height:94vh;
+      position: fixed;
+  }
+}
+</style>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131097098-1"></script>
 <script>
