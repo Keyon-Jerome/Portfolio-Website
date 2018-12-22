@@ -51,27 +51,30 @@
         <div  class="container-fluid px-0 mx-0" style="padding-right:0; margin-right: 0;">
             <div class="container-fluid px-0 mx-0 " style="width:100%;">
             <!-- KEYON blue header row-->
-            <section id="header" class=" row py-sm-1 stopOverflow" style="background: #6384B6; margin:0;">
+            <section id="header" class=" row  stopOverflow" style="background: #6384B6; margin:0;">
 
                 <div class=" col-12 col-sm-4 align-self-center ">
                     <!-- image column-->
                     <img src="images/keyon2square.jpg" class=" rounded-circle head-border mx-auto mt-2 mt-sm-0 d-block" alt="avatar">
                 </div>
                 <!-- text -->
-                <div class=" col-12 col-sm-8 text-light justify-content-center">
-                    <h1 class="animated  bounceInRight  display-1 mt-3 row justify-content-center text-uppercase" style="font-size:7.7vw;">Keyon
+                <div class=" col-12 col-sm-8 text-light justify-content-center align-self-center">
+                    <h1 class="animated  bounceInRight  display-1 my-5 row justify-content-center text-uppercase" style="font-size:7.7vw;">Keyon
                         Jerome</h1>
-                    <h2 class=" row justify-content-center text-center" style="font-size:4.5vw;">aspiring
+                    <h2 class=" row my-5 justify-content-center text-center" style="font-size:4.5vw;">aspiring
                         thingmaker/engineer</h2>
 
-                    <p class=" mt-5 welcome-paragraph  ml-1 ml-sm-0 text-center"><b>Welcome!</b> I'm Keyon, a student
+                    <p class=" my-5 welcome-paragraph  ml-1 ml-sm-0 text-center"><b>Welcome!</b> I'm Keyon, a student
                         from
                         Canada. Welcome to my personal website! I coded this website from the ground up using HTML and
                         CSS over a summer where I had free time. It's meant to be a place where I can document my own
                         successes, failures, and anything I find interesting along the way; especially relating to
                         technology.
                     </p>
-
+                    <div class="row justify-content-center ">
+                    <a href="resume.html" class="btn btn-light mx-5">TO PORTFOLIO</a>
+                    <a href="resume.html" class="btn btn-light mx-5">CONTACT</a>
+                    </div>
                 </div>
             </section> <!-- row -->
             </div>
@@ -91,6 +94,18 @@
   #header {
       height:94vh;
       position: fixed;
+  }
+  html {
+      font-size:1.2rem;
+  }
+  .btn {
+      height:90%;
+     width:20%;
+  }
+  .btn:hover {
+      transform: scale(1.5,1.5);
+      transition-property: transform;
+      transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 }
 </style>
