@@ -71,7 +71,7 @@
                         successes, failures, and anything I find interesting along the way; especially relating to
                         technology.
                     </p>
-                    <div class="row justify-content-center ">
+                    <div class="row justify-content-center mb-2">
                     <a href="resume.html" class="btn btn-light mx-5">TO PORTFOLIO</a>
                     <a href="resume.html" class="btn btn-light mx-5">CONTACT</a>
                     </div>
@@ -89,24 +89,30 @@
     </main>
 </body>
 <style>
-    /* Large devices (desktops, 992px and up) */
+   html {
+       font-size:1rem;
+   } 
 @media (min-width: 576px) {
   #header {
       height:94vh;
-      position: fixed;
+      position:absolute;
+      overflow-y: hidden;
   }
   html {
-      font-size:1.2rem;
+      font-size:1.6vw;
+      overflow-y: hidden;
   }
-  .btn {
-      height:90%;
-     width:20%;
-  }
+
   .btn:hover {
       transform: scale(1.5,1.5);
       transition-property: transform;
       transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   }
+}
+@media (min-width: 992px) {
+    html {
+        font-size:1.2vw;
+    }
 }
 </style>
 
