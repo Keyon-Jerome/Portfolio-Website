@@ -48,49 +48,94 @@
         </div> <!-- bootstrap container -->
     </header>
     <main>
-        <div class="container-fluid" style="height: 98vh; background: linear-gradient(#08B49C, #99BADB);">
-            <div class="row mb-5 py-5">
+        <div class="container-fluid mx-auto " style=" background: linear-gradient(#08B49C, #99BADB); padding-bottom: 10vh;">
+            <div class="row mb-4 pt-lg-2 pb-lg-0">
                 <div class="col text-center">
-                    <p><span class="mx-auto align-items-center display-4 ">TECH PORTFOLIO</span></p>
+                    <p><span class="mx-auto align-items-center display-1 text-white calibri">PROJECTS</span></p>
                 </div>
             </div>
-            <div class="container mx-auto">
-            <div class="row mx-auto ">
-            <div class="col-12 col-lg-4">
-                    <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="container mx-auto mt-0 pt-0">
+            <div class="row mx-auto justify-content-center d-flex pb-3">
+                    <div class="col-12 col-lg-4 card-col pb-4 pb-lg-0">
+                            <div class="card card-dimensions">
+                                    <img class="card-img-top img-thumbnail mb-5 pb-4" src="images/overdosingonsaltwebsite.PNG" alt="Card image cap">
+                                    <div class="card-body">
+                                      <h5 class="card-title text-center ">Overdosing on Salt Website</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <div class="row text-center justify-content-center">
+                                      <a href="https://overdosingonsalt.ca" class="card-button btn btn-danger mx-1">View Project</a>
+                                      <a href="https://github.com/Keyon-Jerome/OverdosingOnSaltWebsite" class=" card-button btn btn-primary mx-1">View Code &lt;/&gt;</a>
+                                    </div>
+                                    </div>
+                                  </div>
+                    </div>
+            <div class="col-12 col-lg-4  card-col pb-4 pb-lg-0">
+                    <div class="card card-dimensions">
+                            <img class="card-img-stop img-thumbnail" src="images/2018leadsphoto.jpg" alt="Card image cap">
                             <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                              <h5 class="card-title text-center">FRC 2018 Robot - Atlas</h5>
+                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt dolor ac felis accumsan, id faucibus odio imperdiet. Quisque sagittis varius cursus. Nam gravida ultrices ipsum et viverra. </p>
+                              <div class="row text-center justify-content-center">
+                              <a href="https://github.com/5288TheSpartans/PowerUp2018" class="text-center btn card-button btn-primary">View Code &lt;/&gt;</a>
+                              </div>
                             </div>
                           </div>
             </div>    
-            <div class="col-12 col-lg-4">
-                    <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="..." alt="Card image cap">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
+
+            <div class="col-12 col-lg-4 card-col pb-4 pb-lg-0">
+                    <div class="card card-dimensions">
+                            <img class="card-img-top img-thumbnail" src="images/visionphoto.png" alt="Card image cap">
+                            <div class="card-body ">
+                              <h5 class="card-title text-center">OpenCV with the Jetson TX1</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                          </div>
-            </div>
-            <div class="col-12 col-lg-4">
-                    <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="..." alt="Card image cap">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                              <div class="row text-center justify-content-center">
+                              <a href="#" class="btn btn-primary">View Code &lt;/&gt;</a>
+                              </div>
                             </div>
                           </div>
             </div>  
             </div> <!-- second row-->
+            <div class="row mx-auto justify-content-center">
+            <div class="col text-center">
+            <p class="display-4 " ><a href="https://github.com/Keyon-Jerome" class=""><img id="git-image" class="animated pulse infinite" src="images/githublogo.png"></a></p>
+            </div> <!-- col-->
+                
+            </div> <!-- github logo row-->
             </div> <!-- container-->
         </div> <!-- container fluid-->
+        <div>
+        </div>
     </main>
 </body>
+<style>
+
+    .calibri {
+        font-family: Calibri, sans-serif;
+    }
+    .card {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+}
+
+    #git-image {
+        margin-top:10px;
+        height:100px;
+    }
+    .btn {
+    
+    }
+    .card-dimensions {
+        height:100%;
+        width:100%;
+        margin-left:20px;
+        margin-right:20px;
+        border-radius: 0;
+    }
+    .card-col {
+    }
+    </style>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131097098-1"></script>
 <script>
