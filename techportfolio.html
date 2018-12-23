@@ -51,7 +51,7 @@
         <div class="container-fluid mx-auto " style=" background: linear-gradient(#08B49C, #99BADB); padding-bottom: 10vh;">
             <div class="row mb-4 pt-xl-2 pb-xl-0">
                 <div class="col text-center">
-                    <p id="page-top"><span class="mx-auto align-items-center display-1 text-white calibri">PROJECTS</span></p>
+                    <p id="page-top"><span class="text-scaler mx-auto align-items-center display-1 text-white calibri">PROJECTS</span></p>
                 </div>
             </div>
             <div class="container mx-auto mt-0 pt-0 no-gutters">
@@ -97,8 +97,8 @@
             </div> <!-- second row-->
             <div class="row mx-auto justify-content-center">
             <div class="col text-center">
-            <p class="display-4 " ><a  target="_blank" href="https://github.com/Keyon-Jerome" class=""><img id="git-image" class="animated pulse infinite" src="images/githublogo.png"></a></p>
-            <p class="display-4 text-center" style="font-size:1.5rem;">View on GitHub (additional projects)</p>
+            <p class="display-4 " ><a  target="_blank" href="https://github.com/Keyon-Jerome" ><img id="git-image" class="animated pulse infinite" src="images/githublogo.png"></a></p>
+            <p class="display-4 text-center" style="font-size:1.2rem;"><a  target="_blank" href="https://github.com/Keyon-Jerome" >View on GitHub (additional projects)</a></p>
         </div> <!-- col-->
                 
             </div> <!-- github logo row-->
@@ -221,11 +221,18 @@
     }
     /*Medium sized devices.*/
     @media(max-width:768px) {
-        /*Change the TECHNOLOGIES font size.*/
+        /*Change the TECHNOLOGIES and PROJECTS font size.*/
         .text-scaler {
             font-size:3.5rem;
         }
     }
+       /*Small devices.*/
+       @media(max-width:576px) {
+        /*Change the TECHNOLOGIES and PROJECTS font size.*/
+        .text-scaler {
+            font-size:2.0rem;
+        }
+    } 
     </style>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
