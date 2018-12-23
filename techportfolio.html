@@ -98,7 +98,7 @@
             <div class="row mx-auto justify-content-center">
             <div class="col text-center">
             <p class="display-4 " ><a  target="_blank" href="https://github.com/Keyon-Jerome" class=""><img id="git-image" class="animated pulse infinite" src="images/githublogo.png"></a></p>
-            <p class="display-4 text-center">View on GitHub</p>
+            <p class="display-4 text-center" style="font-size:1.5rem;">View on GitHub (additional projects)</p>
         </div> <!-- col-->
                 
             </div> <!-- github logo row-->
@@ -107,7 +107,7 @@
         <div class="container-fluid mx-auto " style="background:#434DD4; ">
         <div class="row pt-xl-5 pt-2">
             <div class="col-12 text-center display-2">
-                <p class="text-white" style="font-weight:500;">TECHNOLOGIES</p>
+                <p class="text-white text-scaler" style="font-weight:500;">TECHNOLOGIES</p>
             </div>
 
         </div>
@@ -181,21 +181,24 @@
 </body>
 <style>
     * {
-        scroll-behavior: smooth !important;;
+        scroll-behavior: smooth !important;
     }
+   
     .calibri {
         font-family: Calibri, sans-serif;
     }
+    /* Styling for the Bootstrap cards to fix common spacing problems.*/
     .card {
         margin: 0 auto; /* Added */
         float: none; /* Added */
         margin-bottom: 10px; /* Added */
 }
-
+    /*Styling for the singlular GitHub image.*/
     #git-image {
         margin-top:10px;
         height:100px;
     }
+    /*Change card dimensions and borders. */
     .card-dimensions {
         height:100%;
         width:100%;
@@ -203,6 +206,7 @@
         margin-right:20px;
         border-radius: 0;
     }
+    /*For the technologies section, change the font size and display.*/
     .list-unstyled li {
         font-size:1.5rem;
         font-weight:400;
@@ -214,6 +218,13 @@
     }
     .head-size {
         font-size:2.75rem;
+    }
+    /*Medium sized devices.*/
+    @media(max-width:768px) {
+        /*Change the TECHNOLOGIES font size.*/
+        .text-scaler {
+            font-size:3.5rem;
+        }
     }
     </style>
 
